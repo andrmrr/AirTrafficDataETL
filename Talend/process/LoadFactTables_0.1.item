@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:276dmTi/IVxtMsqhJUvstjoH0uu20aeYXyhQFUv/" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/TOS_DI-8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lgdNd6t/K04NSPunP8kJqBI4VhDOlKxC9JcmP9og" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_5Slj8IhqEe62_YwbSKWFOg" name="DataOperation"/>
+    <routinesParameter id="_5TKywIhqEe62_YwbSKWFOg" name="Mathematical"/>
+    <routinesParameter id="_5TQSUIhqEe62_YwbSKWFOg" name="Numeric"/>
+    <routinesParameter id="_5TTVoIhqEe62_YwbSKWFOg" name="Relational"/>
+    <routinesParameter id="_5TXAAIhqEe62_YwbSKWFOg" name="StringHandling"/>
+    <routinesParameter id="_5TbRcIhqEe62_YwbSKWFOg" name="TalendDataGenerator"/>
+    <routinesParameter id="_5Te70IhqEe62_YwbSKWFOg" name="TalendDate"/>
+    <routinesParameter id="_5TlCcIhqEe62_YwbSKWFOg" name="TalendStringUtil"/>
+    <routinesParameter id="_5Th_IIhqEe62_YwbSKWFOg" name="TalendString"/>
+  </parameters>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eWpFcIhrEe62_YwbSKWFOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;postgresfib.fib.upc.edu&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;6433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AMOS&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;andreja.andrejic&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eGqtmfK0oXFC0mD/7Wz4muYC2wNYHi2dzMiCb0I/SXtBkrWyskg="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct workOrderID, reporteurID, aircraftRegistration, to_char(executionDate, 'MM-YYYY') as month&#xD;&#xA;from TechnicalLogBookOrders&#xD;&#xA;where executionDate is not null and aircraftRegistration is not null&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="workorderid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reporteurid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AMOS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;!Relational.ISNULL(input_row.reporteurid) &amp;&amp;&#xA;!Relational.ISNULL(input_row.month) &amp;&amp; !input_row.month.equals(&quot;&quot;) &amp;&amp;&#xA;TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.month.substring(3,7)) > 0 ||&#xA;(TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.month.substring(3,7)) == 0 &amp;&amp;&#xA;TalendDate.getDate(&quot;MM&quot;).compareTo(input_row.month.substring(0,2)) > 0)"/>
+    <elementParameter field="TEXT" name="LABEL" value="ErrorChecking"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_3">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUniqRow_1" show="false"/>
+    <elementParameter field="TABLE" name="UNIQUE_KEY">
+      <elementValue elementRef="SCHEMA_COLUMN" value="workorderid"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reporteurid"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" value="M" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" value="" show="false"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="UniqueWorkOrder"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tUniqRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="UNIQUE" name="UNIQUE">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="DUPLICATE" name="DUPLICATE">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_2" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="personID"/>
+      <elementValue elementRef="INPUT_COLUMN" value="reporteurid"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="aircraftID"/>
+      <elementValue elementRef="INPUT_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="monthID"/>
+      <elementValue elementRef="INPUT_COLUMN" value="month"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="counter"/>
+      <elementValue elementRef="FUNCTION" value="count"/>
+      <elementValue elementRef="INPUT_COLUMN" value="workorderid"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AggregateWorkerID"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_2">
+      <column comment="" key="false" length="6" name="personID" nullable="false" pattern="" precision="0" sourceType="" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftID" nullable="false" pattern="" precision="0" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="monthID" nullable="false" pattern="" precision="0" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="counter" nullable="false" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_W_9WUIhsEe62_YwbSKWFOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;oraclefib.fib.upc.edu&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;oraclefib.fib.upc.edu&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ORABD&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orabd&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;marc.falcon&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qBQFvn2s4GhR+2Nv/QykChKnR6qNCoIYDxvMTxBgfuEeN0QGuzo="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;LogBookReporting&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="personID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="monthID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="counter"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="LogBookReporting"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_2">
+      <column comment="" key="true" length="6" name="personID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="aircraftID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="7" name="monthID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="counter" nullable="false" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="6" name="personID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="6" name="aircraftID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="true" length="7" name="monthID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="counter" nullable="false" pattern="" precision="-1" sourceType="NUMBER" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="workorderid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reporteurid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ErrorLookup"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" defaultValue="" key="false" length="10" name="workorderid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="reporteurid" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="month" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JVQg4IhsEe62_YwbSKWFOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;postgresfib.fib.upc.edu&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;6433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AIMS&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;andreja.andrejic&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GGqLHN7aBYGTcf9rO1TUJXIOQkR/YKf0qIMFg4tNKqgXNfZA0gI="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#xD;&#xA;  f1.flightID,&#xD;&#xA;  f1.aircraftRegistration,&#xD;&#xA;  f1.departureAirport,&#xD;&#xA;  f1.arrivalAirport,&#xD;&#xA;  f1.scheduledDeparture,&#xD;&#xA;  CASE&#xD;&#xA;    WHEN f1.delayCode IS NULL THEN 'empty'&#xD;&#xA;    WHEN f1.delayCode = '' THEN 'empty'&#xD;&#xA;    ELSE f1.delayCode::varchar(10)&#xD;&#xA;  END,&#xD;&#xA;  f1.cancelled,&#xD;&#xA;  f1.kind,&#xD;&#xA;  (DATE_PART('day', f1.actualArrival::timestamp - f1.actualDeparture::timestamp) * 24 +&#xD;&#xA;  DATE_PART('hour', f1.actualArrival::timestamp - f1.actualDeparture::timestamp)) AS flightHours,&#xD;&#xA;  CASE f1.cancelled WHEN 'f' THEN 1 WHEN 't' THEN 0 END AS flightCycles,&#xD;&#xA;  CASE&#xD;&#xA;    WHEN (DATE_PART('day', f1.actualArrival::timestamp - f1.scheduledArrival::timestamp) * 24 +&#xD;&#xA;    DATE_PART('hour',  f1.actualArrival::timestamp - f1.scheduledArrival::timestamp)) * 60 +&#xD;&#xA;    DATE_PART('minute',  f1.actualArrival::timestamp - f1.scheduledArrival::timestamp) > 0 THEN 1&#xD;&#xA;    ELSE 0&#xD;&#xA;  END AS delays,&#xD;&#xA;  (DATE_PART('day', f1.actualArrival::timestamp - f1.scheduledArrival::timestamp) * 24 +&#xD;&#xA;  DATE_PART('hour',  f1.actualArrival::timestamp - f1.scheduledArrival::timestamp)) * 60 +&#xD;&#xA;  DATE_PART('minute',  f1.actualArrival::timestamp - f1.scheduledArrival::timestamp) AS delayedMinutes,&#xD;&#xA;  0 AS cancellations,&#xD;&#xA;  TO_CHAR(f1.scheduledDeparture, 'DD-MM-YYYY') AS date&#xD;&#xA;FROM&#xD;&#xA;  Flights f1&#xD;&#xA;WHERE&#xD;&#xA;  f1.scheduledArrival > f1.scheduledDeparture&#xD;&#xA;  AND f1.actualArrival > f1.actualDeparture&#xD;&#xA;  AND f1.cancelled = 'f'&#xD;&#xA;  AND SUBSTRING(f1.flightID FROM 1 FOR 6) = TO_CHAR( f1.scheduledDeparture, 'ddMMyy')&#xD;&#xA;  AND SUBSTRING(f1.flightID FROM 8 FOR 3) = SUBSTRING(f1.departureAirport FROM 1 FOR 3)&#xA;  AND SUBSTRING(f1.flightID FROM 12 FOR 3) = SUBSTRING(f1.arrivalAirport FROM 1 FOR 3)&#xD;&#xA;  AND SUBSTRING(f1.flightID FROM 21 FOR 6) = f1.aircraftRegistration&#xD;&#xA;  AND (DATE_PART('day', f1.actualArrival::timestamp - f1.actualDeparture::timestamp) * 24 +&#xD;&#xA;  DATE_PART('hour', f1.actualArrival::timestamp - f1.actualDeparture::timestamp)) &lt; 24&#xD;&#xA;  AND NOT EXISTS (&#xD;&#xA;    SELECT 1&#xD;&#xA;    FROM Flights f2&#xD;&#xA;    WHERE&#xD;&#xA;      f1.scheduledDeparture &lt;= f2.scheduledArrival&#xD;&#xA;      AND f1.scheduledArrival >= f2.scheduledDeparture&#xD;&#xA;      AND f1.aircraftRegistration = f2.aircraftRegistration&#xD;&#xA;      AND f1.flightID &lt;> f2.flightID&#xD;&#xA;  )&#xD;&#xA;&#xD;&#xA;UNION&#xD;&#xA;&#xD;&#xA;SELECT DISTINCT&#xD;&#xA;  flightID,&#xD;&#xA;  aircraftRegistration,&#xD;&#xA;  departureAirport,&#xD;&#xA;  arrivalAirport,&#xD;&#xA;  scheduledDeparture,&#xD;&#xA;  CASE&#xD;&#xA;    WHEN delayCode IS NULL THEN 'empty'&#xD;&#xA;    WHEN delayCode = '' THEN 'empty'&#xD;&#xA;    ELSE delayCode::varchar(10)&#xD;&#xA;  END,&#xD;&#xA;  cancelled,&#xD;&#xA;  kind,&#xD;&#xA;  0 AS flightHours,&#xD;&#xA;  CASE cancelled WHEN 'f' THEN 1 WHEN 't' THEN 0 END AS flightCycles,&#xD;&#xA;  0 AS delays,&#xD;&#xA;  0 AS delayedMinutes,&#xD;&#xA;  1 AS cancellations,&#xD;&#xA;  TO_CHAR(scheduledDeparture, 'DD-MM-YYYY') AS date&#xD;&#xA;FROM&#xD;&#xA;  Flights&#xD;&#xA;WHERE&#xD;&#xA;  cancelled = 't'&#xD;&#xA;  AND scheduledArrival > scheduledDeparture&#xD;&#xA;  AND SUBSTRING(flightID FROM 1 FOR 6) = TO_CHAR( scheduledDeparture, 'ddMMyy')&#xD;&#xA;  AND SUBSTRING(flightID FROM 8 FOR 3) = SUBSTRING(departureAirport FROM 1 FOR 3)&#xA;  AND SUBSTRING(flightID FROM 12 FOR 3) = SUBSTRING(arrivalAirport FROM 1 FOR 3)&#xD;&#xA;  AND SUBSTRING(flightID FROM 21 FOR 6) = aircraftRegistration;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="flightid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="departureairport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrivalairport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="scheduleddeparture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delaycode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cancelled"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kind"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flighthours"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="flightcycles"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delays"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delayedminutes"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cancellations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AIMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="26" name="flightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="departureairport" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="arrivalairport" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="scheduleddeparture" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" originalLength="29" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="delaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="cancelled" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="kind" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="flighthours" nullable="true" pattern="" precision="17" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="flightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="delays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="delayedminutes" nullable="true" pattern="" precision="17" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hDFW8I3kEe6RNrOuADTV8w-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MappingAIMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AIMS" name="AIMS">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="AIMSdelaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="AIMS">
+        <mapperTableEntries name="AIMSflightid" expression="row2.flightid " type="id_String"/>
+        <mapperTableEntries name="AIMSaircraftregistration" expression="row2.aircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" expression="row2.flighthours " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" expression="row2.flightcycles " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" expression="row2.delays " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" expression="row2.delayedminutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" expression="row2.cancellations " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdate" expression="row2.date " type="id_String"/>
+        <mapperTableEntries name="AIMSdelaycode" expression="row2.delaycode " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="flightid" type="id_String"/>
+        <mapperTableEntries name="aircraftregistration" type="id_String"/>
+        <mapperTableEntries name="departureairport" type="id_String"/>
+        <mapperTableEntries name="arrivalairport" type="id_String"/>
+        <mapperTableEntries name="scheduleddeparture" type="id_Date"/>
+        <mapperTableEntries name="delaycode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cancelled" type="id_String"/>
+        <mapperTableEntries name="kind" type="id_String"/>
+        <mapperTableEntries name="flighthours" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="flightcycles" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="delays" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="delayedminutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="cancellations" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="16" offsetLabelY="0" posX="448" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;!Relational.ISNULL(input_row.AIMSflighthours) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AIMSflightcycles) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AIMSdelays) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AIMSdelayedminutes) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AIMScancellations) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AIMSdelaycode) &amp;&amp; !input_row.AIMSdelaycode.equals(&quot;&quot;) &amp;&amp;&#xA;TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.AIMSdate.substring(6,10)) > 0 ||&#xA;(TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.AIMSdate.substring(6,10)) == 0 &amp;&amp; &#xA;TalendDate.getDate(&quot;MM&quot;).compareTo(input_row.AIMSdate.substring(3,5)) > 0 ||&#xA;(TalendDate.getDate(&quot;MM&quot;).compareTo(input_row.AIMSdate.substring(3,5)) == 0 &amp;&amp;&#xA;TalendDate.getDate(&quot;DD&quot;).compareTo(input_row.AIMSdate.substring(0,2)) >= 0))&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="TEXT" name="LABEL" value="NullChecking"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AIMS" name="tFilterRow_2">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="AIMSdelaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="AIMS" name="FILTER">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="AIMSdelaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="AIMS" name="REJECT">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="AIMSdelaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJoin" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJoin_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOOKUP_COLS" value="true"/>
+    <elementParameter field="TABLE" name="LOOKUP_COLS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="AMOSunscheduledoutofservice"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="JOIN_KEY">
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="AMOSaircraftregistration"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSdate"/>
+      <elementValue elementRef="LOOKUP_COLUMN" value="AMOSdate"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_INNER_JOIN" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="JoinFact"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJoin_1">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hDFW8I3kEe6RNrOuADTV8w-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MappingAggr"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Recovery1" name="Recovery1">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="Aggregation" name="Aggregation">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Recovery1">
+        <mapperTableEntries name="AIMSflightid" expression="row3.AIMSflightid " type="id_String"/>
+        <mapperTableEntries name="AIMSaircraftregistration" expression="row3.AIMSaircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" expression="row3.AIMSflighthours " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" expression="row3.AIMSflightcycles " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" expression="row3.AIMSdelays " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" expression="row3.AIMSdelayedminutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" expression="row3.AIMScancellations " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdate" expression="row3.AIMSdate " type="id_String"/>
+        <mapperTableEntries name="AMOSscheduledoutofservice" expression="row3.AMOSscheduledoutofservice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSunscheduledoutofservice" expression="row3.AMOSunscheduledoutofservice " type="id_Float" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Aggregation">
+        <mapperTableEntries name="AIMSflightid" expression="row3.AIMSflightid " type="id_String"/>
+        <mapperTableEntries name="AIMSaircraftregistration" expression="row3.AIMSaircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" expression="row3.AIMSflighthours " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" expression="row3.AIMSflightcycles " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" expression="row3.AIMSdelays " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" expression="row3.AIMSdelayedminutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" expression="row3.AIMScancellations " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdate" expression="row3.AIMSdate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOSscheduledoutofservice" expression="row3.AMOSscheduledoutofservice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSunscheduledoutofservice" expression="row3.AMOSunscheduledoutofservice " type="id_Float" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="AIMSflightid" type="id_String"/>
+        <mapperTableEntries name="AIMSaircraftregistration" type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMOSscheduledoutofservice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSunscheduledoutofservice" type="id_Float" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/xbara_000/Desktop/Master/ANY1/Q1/DW/D2/recovery_fact_table_join.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="RecoveryJoin"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Recovery1" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSdate"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSdate"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="IGNORE_NULL" value="true"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AggregateAircraftDay"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hDFW8I3kEe6RNrOuADTV8w-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MappingResult"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LoadFacts" name="LoadFacts">
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" originalDbColumnName="aircraftID" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" originalDbColumnName="flightHours" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" originalDbColumnName="flightCycles" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" originalDbColumnName="delays" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" originalDbColumnName="delayedMinutes" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" originalDbColumnName="cancellations" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="false" originalDbColumnName="timeID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_scheduledOutOfService" nullable="true" originalDbColumnName="scheduledOutOfService" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_unscheduledOutOfService" nullable="true" originalDbColumnName="unScheduledOutOfService" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="Recovery2" name="Recovery2">
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_scheduledOutOfService" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_unscheduledOutOfService" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="date" expression="TalendDate.parseDate(&quot;dd-MM-yyyy&quot;, row4.AIMSdate) " type="id_Date"/>
+        <mapperTableEntries name="AMOS_scheduledOutOfService" expression="Math.round(row4.AMOSscheduledoutofservice) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AMOS_unscheduledOutOfService" expression="Math.round(row4.AMOSunscheduledoutofservice) " type="id_Integer" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="LoadFacts">
+        <mapperTableEntries name="AIMSaircraftregistration" expression="row4.AIMSaircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" expression="row4.AIMSflighthours " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" expression="row4.AIMSflightcycles " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" expression="row4.AIMSdelays " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" expression="row4.AIMSdelayedminutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" expression="row4.AIMScancellations " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date" expression="Var.date " type="id_Date"/>
+        <mapperTableEntries name="AMOS_scheduledOutOfService" expression="Var.AMOS_scheduledOutOfService " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AMOS_unscheduledOutOfService" expression="Var.AMOS_unscheduledOutOfService " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Recovery2">
+        <mapperTableEntries name="AIMSaircraftregistration" expression="row4.AIMSaircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" expression="row4.AIMSflighthours " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" expression="row4.AIMSflightcycles " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" expression="row4.AIMSdelays " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" expression="row4.AIMSdelayedminutes " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" expression="row4.AIMScancellations " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date" expression="Var.date " type="id_Date"/>
+        <mapperTableEntries name="AMOS_scheduledOutOfService" expression="Var.AMOS_scheduledOutOfService " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AMOS_unscheduledOutOfService" expression="Var.AMOS_unscheduledOutOfService " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="AIMSaircraftregistration" type="id_String"/>
+        <mapperTableEntries name="AIMSflighthours" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSflightcycles" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelays" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMSdelayedminutes" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AIMScancellations" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AMOSscheduledoutofservice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSunscheduledoutofservice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AIMSdate" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_W_9WUIhsEe62_YwbSKWFOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;oraclefib.fib.upc.edu&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;oraclefib.fib.upc.edu&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SERVICE_NAME" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ORABD&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;orabd&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;marc.falcon&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HmN5fyYQlh840NFWud6+Y2vRresUWRteW6rygrdjHsJnPfCMILQ="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;AircraftUtilization&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOS_scheduledOutOfService"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOS_unscheduledOutOfService"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="AircraftUtilization"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="LoadFacts" name="tDBOutput_1">
+      <column comment="" key="true" length="6" name="AIMSaircraftregistration" nullable="false" originalDbColumnName="aircraftID" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" originalDbColumnName="flightHours" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" originalDbColumnName="flightCycles" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" originalDbColumnName="delays" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" originalDbColumnName="delayedMinutes" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" originalDbColumnName="cancellations" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="date" nullable="false" originalDbColumnName="timeID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_scheduledOutOfService" nullable="true" originalDbColumnName="scheduledOutOfService" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_unscheduledOutOfService" nullable="true" originalDbColumnName="unScheduledOutOfService" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="LoadFacts" name="REJECT">
+      <column comment="" key="true" length="6" name="AIMSaircraftregistration" nullable="false" originalDbColumnName="aircraftID" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" originalDbColumnName="flightHours" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" originalDbColumnName="flightCycles" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" originalDbColumnName="delays" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" originalDbColumnName="delayedMinutes" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" originalDbColumnName="cancellations" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="date" nullable="false" originalDbColumnName="timeID" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_scheduledOutOfService" nullable="true" originalDbColumnName="scheduledOutOfService" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_unscheduledOutOfService" nullable="true" originalDbColumnName="unScheduledOutOfService" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/xbara_000/Desktop/Master/ANY1/Q1/DW/D2/recovery_fact_table_aggregation.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="RecoveryAggregation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Recovery2" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_scheduledOutOfService" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="AMOS_unscheduledOutOfService" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="2" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="true" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflightid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="JoinReject"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;!Relational.ISNULL(input_row.AMOSairport) &amp;&amp; !input_row.AMOSairport.equals(&quot;&quot;) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AMOSscheduledoutofservice) &amp;&amp;&#xA;!Relational.ISNULL(input_row.AMOSunscheduledoutofservice) &amp;&amp;&#xA;TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.AMOSdate.substring(6,10)) > 0 ||&#xA;(TalendDate.getDate(&quot;YYYY&quot;).compareTo(input_row.AMOSdate.substring(6,10)) == 0 &amp;&amp; &#xA;TalendDate.getDate(&quot;MM&quot;).compareTo(input_row.AMOSdate.substring(3,5)) > 0 ||&#xA;(TalendDate.getDate(&quot;MM&quot;).compareTo(input_row.AMOSdate.substring(3,5)) == 0 &amp;&amp;&#xA;TalendDate.getDate(&quot;DD&quot;).compareTo(input_row.AMOSdate.substring(0,2)) >= 0))"/>
+    <elementParameter field="TEXT" name="LABEL" value="NullChecking"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AMOS" name="tFilterRow_1">
+      <column comment="" key="false" length="6" name="AMOSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AMOSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AMOSairport" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="AMOS" name="FILTER">
+      <column comment="" key="false" length="6" name="AMOSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AMOSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AMOSairport" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="AMOS" name="REJECT">
+      <column comment="" key="false" length="6" name="AMOSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AMOSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AMOSairport" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_eWpFcIhrEe62_YwbSKWFOg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;postgresfib.fib.upc.edu&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;6433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AMOS&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;andreja.andrejic&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XN3yu1EicvDr20aJANNfdvqBpcmZTKDF5YLEcb0yHskkW4B3EDY="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT&#xD;&#xA;  aircraftRegistration,&#xD;&#xA;  startTime,&#xD;&#xA;  TO_CHAR(startTime, 'DD-MM-YYYY') AS date,&#xD;&#xA;  (startTime + duration) AS endTime,&#xD;&#xA;  kind,&#xD;&#xA;  airport,&#xD;&#xA;  ROUND(CAST(EXTRACT(EPOCH FROM duration) / 3600 AS NUMERIC), 2) AS scheduledOutOfService,&#xD;&#xA;  0 AS unscheduledOutOfService,&#xD;&#xA;  (select r.airport&#xD;&#xA;       from maintenanceevents r&#xD;&#xA;       where r.kind = 'Revision'&#xD;&#xA;       AND m.startTime >= r.startTime&#xD;&#xA;     AND (m.startTime + m.duration) &lt;= (r.startTime + r.duration)&#xD;&#xA;     AND m.aircraftRegistration = r.aircraftRegistration&#xD;&#xA;     limit 1&#xD;&#xA;  ) as revisionAirport&#xD;&#xA;FROM&#xD;&#xA;  maintenanceevents m&#xD;&#xA;WHERE&#xD;&#xA;  (&#xD;&#xA;       kind = 'Maintenance'&#xD;&#xA;      AND (duration > INTERVAL '60 minutes' AND duration &lt;= INTERVAL '1 day')&#xD;&#xA;  )&#xD;&#xA;  or (&#xD;&#xA;       kind = 'Revision'&#xD;&#xA;      AND (duration > INTERVAL '1 day' AND  duration &lt;= INTERVAL '1 month')&#xD;&#xA;      AND airport IS NOT null&#xD;&#xA;  )&#xD;&#xA;UNION&#xD;&#xA;SELECT DISTINCT&#xD;&#xA;  aircraftRegistration,&#xD;&#xA;  startTime,&#xD;&#xA;  TO_CHAR(startTime, 'DD-MM-YYYY') AS date,&#xD;&#xA;  (startTime + duration) AS endTime,&#xD;&#xA;  kind,&#xD;&#xA;  airport,&#xD;&#xA;  0 AS scheduledOutOfService,&#xD;&#xA;  ROUND(CAST(EXTRACT(EPOCH FROM duration) / 3600 AS NUMERIC), 2) AS unscheduledOutOfService,&#xD;&#xA;  null as revisionAirport&#xD;&#xA;FROM&#xD;&#xA;  maintenanceevents&#xD;&#xA;where airport IS NOT null &#xD;&#xA;and (kind = 'Delay' AND duration &lt; INTERVAL '60 minutes')&#xD;&#xA;    OR (kind = 'AircraftOnGround' AND (duration > INTERVAL '60 minutes' AND duration &lt; INTERVAL '1 days'))&#xD;&#xA;    OR (kind = 'Safety')&#xD;&#xA;;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="aircraftregistration"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="starttime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="endtime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="kind"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="airport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="scheduledoutofservice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="unscheduledoutofservice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="revisionAirport"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="AMOS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="6" name="aircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="starttime" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="29" name="endtime" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="kind" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="airport" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="scheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="unscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="revisionAirport" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="3" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_hDFW8I3kEe6RNrOuADTV8w-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="MappingAMOS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AMOS" name="AMOS">
+      <column comment="" key="false" length="6" name="AMOSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AMOSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AMOSairport" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="airport" expression="(!Relational.ISNULL(row1.revisionAirport) &amp;&amp; row1.kind.equals(&quot;Maintenance&quot;)) ? row1.revisionAirport : row1.airport " type="id_String" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="AMOS">
+        <mapperTableEntries name="AMOSaircraftregistration" expression="row1.aircraftregistration " type="id_String"/>
+        <mapperTableEntries name="AMOSdate" expression="row1.date " type="id_String"/>
+        <mapperTableEntries name="AMOSscheduledoutofservice" expression="row1.scheduledoutofservice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSunscheduledoutofservice" expression="row1.unscheduledoutofservice " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="AMOSairport" expression="Var.airport " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="aircraftregistration" type="id_String"/>
+        <mapperTableEntries name="starttime" type="id_Date"/>
+        <mapperTableEntries name="date" type="id_String"/>
+        <mapperTableEntries name="endtime" type="id_Date"/>
+        <mapperTableEntries name="kind" type="id_String"/>
+        <mapperTableEntries name="airport" type="id_String" nullable="true"/>
+        <mapperTableEntries name="scheduledoutofservice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="unscheduledoutofservice" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="revisionAirport" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSaircraftregistration"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSdate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMOSairport"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="NullsAMOS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AMOS" name="tLogRow_2">
+      <column comment="" key="false" length="6" name="AMOSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AMOSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="AMOSunscheduledoutofservice" nullable="true" pattern="" precision="-1" sourceType="FLOAT4" type="id_Float" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AMOSairport" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflightid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AIMSdelaycode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="NullsAIMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="AIMS" name="tLogRow_3">
+      <column comment="" key="false" length="26" name="AIMSflightid" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="26" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="AIMSaircraftregistration" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflighthours" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSflightcycles" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMSdelays" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AIMSdelayedminutes" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="17" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="AIMScancellations" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AIMSdate" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="AIMSdelaycode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tFilterRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row13" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_3" target="tUniqRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row13" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row14" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_3" target="tLogRow_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
+  </connection>
+  <connection connectorName="UNIQUE" label="row8" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tAggregateRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tAggregateRow_2" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_2" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="aircraftID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="personID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="counter"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="monthID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="AIMS" lineStyle="0" metaname="AIMS" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFilterRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AIMS" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row11" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_2" target="tJoin_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row12" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_2" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJoin_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJoin_1" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row7" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJoin_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Recovery1" lineStyle="0" metaname="Recovery1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_3" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Recovery1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Aggregation" lineStyle="0" metaname="Aggregation" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Aggregation" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSflightcycles"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSdelays"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSaircraftregistration"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSflighthours"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMScancellations"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AMOSunscheduledoutofservice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AMOSscheduledoutofservice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AIMSdelayedminutes"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="LoadFacts" lineStyle="0" metaname="LoadFacts" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_4" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="LoadFacts" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Recovery2" lineStyle="0" metaname="Recovery2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_4" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Recovery2" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row9" lineStyle="8" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_1" target="tJoin_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row10" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="revisionAirport"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="airport"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="AMOS" lineStyle="0" metaname="AMOS" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="AMOS" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
